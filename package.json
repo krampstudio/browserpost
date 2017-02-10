@@ -1,0 +1,32 @@
+{
+  "name": "browserpost",
+  "version": "1.0.0",
+  "description": "The Browser Post www ",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "node-sass -w --source-map true  public/scss/main.scss public/css/main.css",
+    "style" : "node-sass --output-style compressed --source-map true  public/scss/main.scss public/css/main.css",
+    "build": "npm run style",
+    "lint": "eslint public/js/src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krampstudio/browserpost.git"
+  },
+  "keywords": [
+    "browser",
+    "blog",
+    "browserpost"
+  ],
+  "author": "Bertrand Chevrier chevrier.bertrand@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krampstudio/browserpost/issues"
+  },
+  "homepage": "https://github.com/krampstudio/browserpost#readme",
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "node-sass": "^4.5.0"
+  },
+  "dependencies": {}
+}

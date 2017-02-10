@@ -1,0 +1,46 @@
+body {
+    & > header {
+        background-color: #4365a8;
+         //background-image: linear-gradient(#4365a8, #7892C2);
+         color: #fff;
+        box-shadow: 0 2px 5px #333;
+        //text-shadow: 1px 1px 1px #000;
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: bold;
+
+            padding: .5rem 1rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            //font-style: italic;
+            padding: .5rem 1rem;
+        }
+    }
+
+    & > main {
+        padding: 1em;
+
+        display: flex;
+        flex-flow: column nowrap;
+
+        & > section {
+            flex: 1 1 auto;
+        }
+        & > aside {
+            flex: 0 1 20%;
+        }
+    }
+
+    & > footer {
+        font-size:1rem;
+        padding: 1em;
+        height: 50px;
+        text-align: center;
+        color : #fff;
+        background-color: #333;
+
+    }
+}
