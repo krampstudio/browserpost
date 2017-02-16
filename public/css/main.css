@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   height: 100%;
   font-size: 62.5%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Catamaran', sans-serif;
   color: #333;
   margin: 0;
   padding: 0; }
@@ -32,19 +32,20 @@ code {
   color: #cc6699; }
 
 body > header {
-  background-color: #4365a8;
-  color: #fff;
-  box-shadow: 0 2px 5px #333; }
+  background-color: #fff;
+  background-image: linear-gradient(#fff, #efefef);
+  color: #333;
+  box-shadow: 0 2px 3px #666;
+  position: relative; }
   body > header h1 {
+    font-family: 'Abril Fatface', cursive;
     font-size: 2.4rem;
-    font-weight: bold;
-    padding: .5rem 1rem; }
-  body > header h2 {
-    font-size: 1.8rem;
-    padding: .5rem 1rem; }
+    text-shadow: 1px 1px 1px #888;
+    padding: .5rem 1rem;
+    text-align: center; }
 
 body > main {
-  padding: 1em;
+  background-color: #DADBE8;
   display: flex;
   flex-flow: column nowrap; }
   body > main > section {
@@ -59,5 +60,41 @@ body > footer {
   text-align: center;
   color: #fff;
   background-color: #333; }
+
+article {
+  margin: .75rem;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: .5rem; }
+  article header {
+    display: flex;
+    flex-flow: row nowrap; }
+    article header .issue {
+      flex: 0 1 5rem;
+      background-color: #2287a8;
+      color: #fff;
+      font-size: 3rem;
+      border-radius: 3px;
+      text-align: center; }
+      article header .issue:before {
+        content: '#'; }
+    article header h1 {
+      color: #2287a8;
+      font-size: 3rem;
+      margin-left: 1rem;
+      flex: 1 1 auto; }
+    article header .date {
+      flex: 0 1 auto;
+      color: #888; }
+  article .content {
+    padding: .5rem; }
+    article .content h1 {
+      font-size: 2.25rem; }
+    article .content h2 {
+      font-size: 1.75rem; }
+    article .content h3 {
+      font-size: 1.5rem; }
+    article .content h4 {
+      font-size: 1.25rem; }
 
 /*# sourceMappingURL=main.css.map */

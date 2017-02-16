@@ -1,0 +1,53 @@
+
+article {
+    margin: .75rem;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: .5rem;
+
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+
+        .issue {
+            flex: 0 1 5rem;
+            background-color: #2287a8;
+            color: #fff;
+            font-size: 3rem;
+            border-radius: 3px;
+            text-align: center;
+            &:before {
+                content: '#';
+            }
+        }
+
+        h1 {
+            color: #2287a8;
+            font-size: 3rem;
+            margin-left: 1rem;
+            flex: 1 1 auto;
+        }
+
+        .date {
+            flex: 0 1 auto;
+            color: #888;
+        }
+    }
+
+    .content {
+        padding: .5rem;
+
+        h1 {
+            font-size: 2.25rem;
+        }
+        h2 {
+            font-size: 1.75rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        h4 {
+            font-size: 1.25rem;
+        }
+    }
+}

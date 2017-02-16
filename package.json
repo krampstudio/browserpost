@@ -4,8 +4,10 @@
   "description": "The Browser Post www ",
   "main": "index.js",
   "scripts": {
-    "dev" : "node-sass -w --source-map true  public/scss/main.scss public/css/main.css",
-    "style" : "node-sass --output-style compressed --source-map true  public/scss/main.scss public/css/main.css",
+    "dev": "npm run sass & npm run preview",
+    "sass": "node-sass -w --source-map true --include-path public/scss  public/scss/main.scss public/css/main.css",
+    "preview": "live-server --browser=/usr/local/lib/fxdev/firefox --open=public --watch=\"public/css/main.css,public/index.html\"",
+    "style": "node-sass --output-style compressed --source-map true  public/scss/main.scss public/css/main.css",
     "build": "npm run style",
     "lint": "eslint public/js/src/**/*.js"
   },
@@ -26,6 +28,7 @@
   "homepage": "https://github.com/krampstudio/browserpost#readme",
   "devDependencies": {
     "eslint": "^3.15.0",
+    "live-server": "^1.2.0",
     "node-sass": "^4.5.0"
   },
   "dependencies": {}
