@@ -3,7 +3,7 @@ article {
     margin: .75rem;
     background-color: #fff;
     border-radius: 3px;
-    padding: .5rem;
+
 
     header {
         display: flex;
@@ -26,6 +26,11 @@ article {
             font-size: 3rem;
             margin-left: 1rem;
             flex: 1 1 auto;
+
+            img {
+                height: 4rem;
+                vertical-align: middle;
+            }
         }
 
         .date {
@@ -35,19 +40,126 @@ article {
     }
 
     .content {
-        padding: .5rem;
+
+        p {
+            padding: .5rem;
+        }
 
         h1 {
             font-size: 2.25rem;
+            padding: .5rem;
         }
         h2 {
             font-size: 1.75rem;
+            padding: .5rem;
         }
         h3 {
             font-size: 1.5rem;
         }
         h4 {
             font-size: 1.25rem;
+        }
+
+        & > ul {
+            list-style-type: none;
+            li {
+                border-bottom: solid 1px #eee;
+                border-top: solid 1px #eee;
+                position: relative;
+
+                nav {
+                    width: 100%;
+                    height: 2rem;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    .browser {
+                        flex: 0 1 2rem;
+                        width: 2rem;
+                        height: 2rem;
+                        background-size: 2rem 2rem;
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        &.firefox {
+                            background-image: url('../img/firefox.svg');
+                        }
+                    }
+                    .title {
+                        flex : 1 1 auto;
+                    }
+                    .caniuse {
+                        flex: 0 1 auto;
+                        color : #fff;
+                        padding: .5rem;
+                        &.partial {
+                            background-color: rgb(168, 189, 4);
+                        }
+                    }
+                    .tag {
+                        flex: 0 1 auto;
+                        background-color: #eee;
+                        padding: 0 .5rem;
+                    }
+                }
+
+                &.css {
+                    &:after, code {
+                        color: #9C1AB7;
+                    }
+                    &:after {
+                        content: '#css';
+                    }
+                }
+                &.js {
+                    &:after, code {
+                        color: #FE7400;
+                    }
+                    &:after {
+                        content: '#js';
+                    }
+                }
+                &.html {
+                    &:after, code {
+                        color: #210DA3;
+                    }
+                    &:after {
+                        content: '#html';
+                    }
+                }
+                &.api {
+                    &:after, code {
+                        color: #ED0B10;
+                    }
+                    &:after {
+                        content: '#api';
+                    }
+                }
+
+                &.svg {
+                    &:after, code {
+                        color: #E04DC8;
+                    }
+                    &:after {
+                        content: '#svg';
+                    }
+                }
+                &.tools {
+                    &:after, code {
+                        color: #0DA32A;
+                    }
+                    &:after {
+                        content: '#tools';
+                    }
+                }
+            }
+        }
+
+
+
+        .tags {
+
+
+
+
         }
     }
 }

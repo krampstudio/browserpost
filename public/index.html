@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>The Browser Post</title>
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Catamaran" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
     <header>
         <h1>The Browser Post</h1>
@@ -16,53 +18,48 @@
             <article>
                 <header>
                     <span class="issue">1</span>
-                    <h1>Firefox 51 &amp; Chrome 56</h1>
+                    <h1>Firefox 51</h1>
                     <span class="date">February 2017</span>
                 </header>
                 <div class="content">
-                    <h2>Firefox 51 is now stable</h2>
+                    <h2>New stable releases</h2>
                     <p>Following the usual 6 weeks cycle, the 51st version of the Mozilla Foundation web browser becomes the stable version the 24th of January. As usual a lot of changes for developers. Among them, some noteworthy :</p>
-                    <h3>CSS</h3>
                     <ul>
-                        <li><code>:indeterminate</code> is implemented for <code>&lt;input type="radio"&gt;</code></li>
-                        <li><code>:placeholder-shown</code> is implemented for <code>&lt;input type="text"&gt;</code></li>
+                        <li class="css">
+                            <nav>
+                                <span class="browser firefox"></span>
+                                <span class="title">:indeterminate</span>
+                                <a class="caniuse partial" href="http://caniuse.com/#feat=css-indeterminate-pseudo">65%</a>
+                                <span class="tag">#css</span>
+                            </nav>
+                            <code>:indeterminate</code> is implemented for <code>&lt;input type="radio"&gt;</code>
+                        </li>
+                        <li class="css firefox">
+                            <code>:placeholder-shown</code> is implemented for <code>&lt;input type="text"&gt;</code>
+                        </li>
+                        <li class="js firefox">
+                            <code>Symbol.toStringTag</code> is implemented and is used to set the default description of an object <code>[object Object]</code>
+                        </li>
+                        <li class="js firefox">
+                            <code>const</code> and <code>let</code> are now 100% ES2015 compliant, and you can now use <code>const</code> in <code>for ... of</code> loops.
+                        </li>
+                        <li class="api firefox">
+                            WebGL2 is now enabled by default. Have a look to the brand new <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">API</a> based on OpenGL ES 3.0.
+                        </li>
+                        <li class="api firefox">
+                            <a href="https://hacks.mozilla.org/2016/10/whats-new-in-indexeddb-2-0/">IndexedDB version 2</a> is now fully implemented
+                        </li>
+                        <li class="svg firefox">
+                            SVG nodes support new attributes : <code>tabindex</code>, <code>href</code> instead of <code>xlink:href</code> and the data attributes via datasets (<code>data-*</code>)
+                            <span class="tags">#svg</span>
+                        </li>
                     </ul>
-                    <h3>JavaScript</h3>
-                    <ul>
-                        <li>`Symbol.toStringTag` is implemented and is used to set the default description of an object `[object Object]`</li>
-                        <li>`const` and `let` are now 100% ES2015 compliant, and you can now use `const` in `for ... of` loops.</li>
-                    </ul>
-                    <h4>APIs</h4>
-                    <ul>
-                        <li>WebGL2 is now enabled by default. Have a look to the brand new <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">API</a> based on OpenGL ES 3.0.</li>
-                        <li><a href="https://hacks.mozilla.org/2016/10/whats-new-in-indexeddb-2-0/">IndexedDB version 2</a> is now fully implemented</li>
-                        <li>SVG nodes support new attributes : `tabindex`, `href` instead of `xlink:href` and the data attributes via datasets (`data-*`)</li>
-                    </ul>
-
-
-
-
-                    - Chrome
-
-                    - IE/Edge
-
-                    - Opera
-
-                    - Safari
-
-                    - Vivaldi
-
-                    - Brave
-
-                    - PhantomJS
-
-                    - Samsung Internet
+                    <p>Please consult the complete list of <a href="https://developer.mozilla.org/en-US/Firefox/Releases/51">changes for web developers</a></p>
                 </div>
                 <footer>
-                    by the kramp.
+                    by <a href="https://twitter.com/kramp">@kramp</a>
                 </footer>
             </article>
-        </section>
         <aside>
             <nav>
                 <ul>
@@ -70,7 +67,7 @@
                 </ul>
             </nav>
             <div>
-            I'm not affiliated with any "user agent". None employs me, but I have a favorite. As a web developer, my goal is to group news for new APIs in the browsers, regulrarly.
+                I'm not affiliated with any "user agent". None employs me, but I have a favorite. As a web developer, my goal is to group news for new APIs in the browsers, regulrarly.
             </div>
         </aside>
     </main>
@@ -81,4 +78,5 @@
 
     <script src="js/dist/main.js"></script>
 </body>
+
 </html>
