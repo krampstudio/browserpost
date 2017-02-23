@@ -10,3 +10,4 @@ www code and resources
 - http://www.opera.com/docs/changelogs
 - https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/desktop/14393/?compareWith=10586
 - http://developer.samsung.com/internet
+- https://developer.apple.com/library/prerelease/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_1.html?utm_source=frontendfocus&utm_medium=email
